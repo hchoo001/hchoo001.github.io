@@ -1,6 +1,4 @@
 body {
-    /* Typography Declarations */
-    color: #222222;
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -12,98 +10,89 @@ body {
 }
 
 .head {
-  padding: 6em 0;
+  padding: 2em 0;
   background-image: url(IMG_5509.jpg), url(white.png);
   background-size: contain;
   background-repeat: repeat, repeat;
-  border-top: solid 1em #ffcf00;
   background-blend-mode: overlay;
 }
 
 .head-heading {
-    /* Layout Declarations */
-    color: #ffcf00;
-    text-shadow: 0 0 10px #000000;
-    /* Typography Declarations */
+    color: #231F1D;
+    text-shadow: 0 0 25px #F5F5F5;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
-    font-size: 6em;
-    letter-spacing: 0.5em;
+    font-size: 4em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
 .head-heading:hover {
     transform: scale(1.2);
-    letter-spacing: 0.1em;
-
+    letter-spacing: 0.2em;
 }
 
-
 .introduction-section,
-.location-section,
+.education-section,
 .questions-section {
-    max-width: 38em;
+    max-width: 50em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 1em;
+    text-align: justify;
+    background-color: ##F5F5F5;
 }
 
 .introduction-section > p,
-.location-section > p,
+.education-section > p,
 .questions-section,
 .content-footer > p {
     /* Typography Declarations */
     font-weight: 300;
-    letter-spacing: 0.05em;
+    color: black;
+}
+
+.education-section > ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 300;
+  color: black;
+
 }
 
 .questions-section > h2 {
-    font-family: "Gentium Book Basic", Georgia, serif;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.2em;
     font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
 }
 
 section > h1 {
+    color: #231F1D;
     margin-top: 2em;
 }
 
 h2 {
     /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.2em;
     font-weight: bold;
+    color: #8A6850;
 }
 
 .content-footer {
   margin: 50px 0;
-  padding: 20px 0;
+  padding: 0.01em 0;
   text-align: center;
-  background-color: #ffcf00;
+  background-color: #E4D5C2;
   text-decoration: none;
 }
 .social > li {
   display: inline-block;
-  margin: 0 5px;
-}
-.content-footer > p {
-  color: #000000;
+  margin: 0 15px;
+  font-weight: bold;
 }
 a {
     font-weight: bold;
     text-decoration: none;
-    color: #F1C863;
-}
-  
-@media only screen and (max-width: 500px) {
-    .head {
-        padding: 3em 0;
-    }
-    .head-heading {
-        font-size: 3em;
-    }
-    .content-footer {
-        padding: 2em 2.5em;
-  }
+    color: #8A6850;
 }
