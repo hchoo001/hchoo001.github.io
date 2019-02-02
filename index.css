@@ -1,6 +1,7 @@
 body {
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.4em;
 }
 
 .content-footer,
@@ -34,36 +35,29 @@ body {
 
 .introduction-section,
 .education-section,
-.questions-section {
+.development-section, .accomplishment-section, .others-section {
     max-width: 50em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     text-align: justify;
-    background-color: ##F5F5F5;
 }
 
 .introduction-section > p,
 .education-section > p,
-.questions-section,
-.content-footer > p {
+.development-section > p,
+.content-footer > p, .accomplishment-section > p, .others-section > p {
     /* Typography Declarations */
     font-weight: 300;
     color: black;
 }
 
-.education-section > ul {
+.education-section > ul, .accomplishment-section > ul, .development-section > ul, .others-section >ul {
   list-style: none;
   padding-left: 0;
   font-weight: 300;
   color: black;
 
-}
-
-.questions-section > h2 {
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
 }
 
 section > h1 {
@@ -80,11 +74,14 @@ h2 {
 }
 
 .content-footer {
-  margin: 50px 0;
-  padding: 0.01em 0;
   text-align: center;
   background-color: #E4D5C2;
   text-decoration: none;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0.1em 0;
 }
 .social > li {
   display: inline-block;
@@ -92,7 +89,6 @@ h2 {
   font-weight: bold;
 }
 a {
-    font-weight: bold;
     text-decoration: none;
     color: #8A6850;
 }
